@@ -23,7 +23,89 @@
         <div class="slides">
             <section>
                 <h1>История шифрования</h1>
-                <img class="r-stretch" src="https://ktkv-presentations.github.io/cypher-1" data-type="qrcode" />
+                <img class="r-stretch" src="https://www.youtube.com/watch?v=dQw4w9WgXcQ" data-type="qrcode" />
+                <div>Ссылка временно сломана</div>
+            </section>
+            <section>
+                <section>
+                    <h1>Информация</h1>
+                    <h4>Биты заменяют информацию</h4>
+                    <p>В основе работы компьютеров лежит представление данных в виде <span
+                            style="color: var(--yellow)">двоичного кода</span></p>
+                    <h5>Используется это в связи с</h5>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <code>Надежностью</code>
+                            <p>электрические устройства легче обрабатывать два состояния</p>
+                        </div>
+                        <div>
+                            <code>Простотой</code>
+                            <p>двоичная система проста для реализации в электронике</p>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h1>Превращение букв в цифры</h1>
+                    <p>текстовые символы (буквы, цифры, знаки препинания) преобразуются в числа с помощью <span
+                            style="color: var(--yellow)">таблиц кодировки символов</span></p>
+                    <h3>Основные таблицы стандартов кодирования символов</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="border-y">
+                            <h6>ASCII</h6>
+                            <ul>
+                                <li>1 символ - 7 бит</li>
+                                <li>Алфавит - 128 символов</li>
+                            </ul>
+                        </div>
+                        <div class="border-y">
+                            <h6>Extended ASCII</h6>
+                            <ul>
+                                <li>1 символ - 8 бит</li>
+                                <li>Алфавит - 256 символов</li>
+                            </ul>
+                        </div>
+                        <div style="grid-column: span 2;" class="border-y">
+                            <h6>Unicode (UTF-8/16/32)</h6>
+                            <ul>
+                                <li>1 символ - 8-32 бита</li>
+                                <li>Алфавит - 1,112,064 символов</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h1>ASCII</h1>
+                    <iframe src="https://www.ascii-code.com/" class="r-stretch" frameborder="0"></iframe>
+                </section>
+                <section>
+                    <h1>Пример преобразования</h1>
+                    <h5>Hi!</h5>
+                    <ol>
+                        <li>H => 72 => 01001000</li>
+                        <li>i => 105 => 01101001</li>
+                        <li>! => 33 => 00100001</li>
+                    </ol>
+                    <h4>01001000 01101001 00100001</h4>
+                </section>
+                <section>
+                    <h1>Преобразование двоичного кода в текст</h1>
+                    <h4>0<span style="color: var(--red)">1</span>0000<span style="color: var(--red)">1</span>0 00<span
+                            style="color: var(--red)">1</span><span style="color: var(--red)">1</span>000<span
+                            style="color: var(--red)">1</span> 0<span style="color: var(--red)">1</span><span
+                            style="color: var(--red)">1</span>0<span style="color: var(--red)">1</span><span
+                            style="color: var(--red)">1</span><span style="color: var(--red)">1</span>0 00<span
+                            style="color: var(--red)">1</span><span style="color: var(--red)">1</span>0<span
+                            style="color: var(--red)">1</span>00 0<span style="color: var(--red)">1</span><span
+                            style="color: var(--red)">1</span><span style="color: var(--red)">1</span>00<span
+                            style="color: var(--red)">1</span>0 0<span style="color: var(--red)">1</span>0<span
+                            style="color: var(--red)">1</span><span style="color: var(--red)">1</span>00<span
+                            style="color: var(--red)">1</span></h4>
+                    <img src="https://www.ascii-code.com/" data-type="qrcode" />
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <h2>B1n4rY</h2>
+                </section>
             </section>
             <section>
                 <section>
@@ -38,6 +120,7 @@
                         <img class="r-stretch" height="400" src="assets/drip-ceasar.png" alt="">
                     </div>
                 </section>
+
                 <section>
                     <h1>Шифр цезаря</h1>
                     <h3>ROT13</h3>
@@ -139,9 +222,11 @@
                     <div class="border-r">
                         <h1>Юямэзц ныв</h1>
                     </div>
+                    <br>
                     <div>Алфавит - русский, без чисел, тип кодировки ROT13</div>
-                    <div>
-                        <table style="font-size: 1rem;">
+                    <br>
+                    <div class="border-b" style="font-size: 1.6rem;">
+                        <table>
                             <tr>
                                 <td>1</td>
                                 <td>2</td>
@@ -159,6 +244,29 @@
                                 <td>14</td>
                                 <td>15</td>
                                 <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>А</td>
+                                <td>Б</td>
+                                <td>В</td>
+                                <td>Г</td>
+                                <td>Д</td>
+                                <td>Е</td>
+                                <td>Ё</td>
+                                <td>Ж</td>
+                                <td>З</td>
+                                <td>И</td>
+                                <td>Й</td>
+                                <td>К</td>
+                                <td>Л</td>
+                                <td>М</td>
+                                <td>Н</td>
+                                <td>О</td>
+                            </tr>
+                        </table>
+                        <hr>
+                        <table>
+                            <tr>
                                 <td>17</td>
                                 <td>18</td>
                                 <td>19</td>
@@ -178,21 +286,6 @@
                                 <td>33</td>
                             </tr>
                             <tr>
-                                <td>А</td>
-                                <td>Б</td>
-                                <td>В</td>
-                                <td>Г</td>
-                                <td>Д</td>
-                                <td>Е</td>
-                                <td>Ж</td>
-                                <td>З</td>
-                                <td>И</td>
-                                <td>Й</td>
-                                <td>К</td>
-                                <td>Л</td>
-                                <td>М</td>
-                                <td>Н</td>
-                                <td>О</td>
                                 <td>П</td>
                                 <td>Р</td>
                                 <td>С</td>
@@ -214,6 +307,437 @@
                         </table>
                     </div>
                 </section>
+                <section>
+                    <h1>Это же он</h1>
+                    <h2>Старый бох</h2>
+                    <img src="./assets/stariiboh.jpg" alt="" class="r-stretch">
+                </section>
+                <section>
+                    <h1>Имплементация</h1>
+                    <pre class="r-stretch"><code data-trim data-line-numbers class="python">
+dict1 = {'A' : 1, 'B' : 2, 'C' : 3, 'D' : 4, 'E' : 5,
+        'F' : 6, 'G' : 7, 'H' : 8, 'I' : 9, 'J' : 10,
+        'K' : 11, 'L' : 12, 'M' : 13, 'N' : 14, 'O' : 15,
+        'P' : 16, 'Q' : 17, 'R' : 18, 'S' : 19, 'T' : 20,
+        'U' : 21, 'V' : 22, 'W' : 23, 'X' : 24, 'Y' : 25, 'Z' : 26}
+ 
+dict2 = {0 : 'Z', 1 : 'A', 2 : 'B', 3 : 'C', 4 : 'D', 5 : 'E',
+        6 : 'F', 7 : 'G', 8 : 'H', 9 : 'I', 10 : 'J',
+        11 : 'K', 12 : 'L', 13 : 'M', 14 : 'N', 15 : 'O',
+        16 : 'P', 17 : 'Q', 18 : 'R', 19 : 'S', 20 : 'T',
+        21 : 'U', 22 : 'V', 23 : 'W', 24 : 'X', 25 : 'Y'}
+ 
+def encrypt(message, shift):
+    cipher = ''
+    for letter in message:
+        if(letter != ' '):
+            num = ( dict1[letter] + shift ) % 26
+            cipher += dict2[num]
+        else:
+            # adds space
+            cipher += ' '
+ 
+    return cipher
+ 
+def decrypt(message, shift):
+    decipher = ''
+    for letter in message:
+        if(letter != ' '):
+            num = ( dict1[letter] - shift + 26) % 26
+            decipher += dict2[num]
+        else:
+            decipher += ' '
+ 
+    return decipher
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Шифр Вижинера</h1>
+                    <div class="grid grid-cols-2 gap-4">
+                        <p class="border-b">последовательность шифров Цезаря с различными значениями сдвига. То есть
+                            <span style="color: var(--yellow)">к первой букве текста применяется преобразование,
+                                например, ROT5, ко второй, например, ROT17, и так далее в зависимости от ключа</span>
+                        </p>
+                        <img src="./assets/visgenere.jpg" height="300" alt="">
+                    </div>
+                </section>
+                <section>
+                    <h1>Шифр Виженера</h1>
+                    <h4>Ключ - <code>шифр</code></h4>
+                    <table>
+                        <tr>
+                            <td>26</td>
+                            <td>10</td>
+                            <td>22</td>
+                            <td>18</td>
+                            <td>26</td>
+                            <td>10</td>
+                            <td>22</td>
+                            <td>18</td>
+                            <td>26</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>ш</td>
+                            <td>и</td>
+                            <td>ф</td>
+                            <td>р</td>
+                            <td>ш</td>
+                            <td>и</td>
+                            <td>ф</td>
+                            <td>р</td>
+                            <td>ш</td>
+                            <td>и</td>
+                        </tr>
+                        <tr>
+                            <td>П</td>
+                            <td>р</td>
+                            <td>и</td>
+                            <td>в</td>
+                            <td>е</td>
+                            <td>т</td>
+                            <td> </td>
+                            <td>м</td>
+                            <td>и</td>
+                            <td>р</td>
+                        </tr>
+                        <tr>
+                            <td>17</td>
+                            <td>18</td>
+                            <td>10</td>
+                            <td>3</td>
+                            <td>6</td>
+                            <td>20</td>
+                            <td> </td>
+                            <td>14</td>
+                            <td>10</td>
+                            <td>18</td>
+                        </tr>
+                    </table>
+                    <br>
+                    <div class="border-b">
+                        (26 + 17) % 33 = 10 => И (индекс 10)
+                    </div>
+                    <br>
+                    <h3>Зашифрованное сообщение: иъюуюь въй</h3>
+                </section>
+                <section>
+                    <h4>Попробуйте зашифровать сообщение</h4>
+                    <div class="border-r">
+                        <h1>Скоро новый год</h1>
+                    </div>
+                    <br>
+                    <h5>Ключ <code>мир</code></h5>
+                    <div class="border-b" style="font-size: 1.6rem;">
+                        <table>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>А</td>
+                                <td>Б</td>
+                                <td>В</td>
+                                <td>Г</td>
+                                <td>Д</td>
+                                <td>Е</td>
+                                <td>Ё</td>
+                                <td>Ж</td>
+                                <td>З</td>
+                                <td>И</td>
+                                <td>Й</td>
+                                <td>К</td>
+                                <td>Л</td>
+                                <td>М</td>
+                                <td>Н</td>
+                                <td>О</td>
+                            </tr>
+                        </table>
+                        <hr>
+                        <table>
+                            <tr>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td>32</td>
+                                <td>33</td>
+                            </tr>
+                            <tr>
+                                <td>П</td>
+                                <td>Р</td>
+                                <td>С</td>
+                                <td>Т</td>
+                                <td>У</td>
+                                <td>Ф</td>
+                                <td>Х</td>
+                                <td>Ц</td>
+                                <td>Ч</td>
+                                <td>Ш</td>
+                                <td>Щ</td>
+                                <td>Ъ</td>
+                                <td>Ы</td>
+                                <td>Ь</td>
+                                <td>Э</td>
+                                <td>Ю</td>
+                                <td>Я</td>
+                            </tr>
+                        </table>
+                    </div>
+                </section>
+                <section>
+                    <h1>Ответ</h1>
+                    <h2>кфдвз чдуфу шаэ</h2>
+                </section>
+                <section>
+                    <h1>Имплементация</h1>
+                    <pre class="r-stretch"><code data-trim data-line-numbers class="python">
+ALPHABET_LENGTH=26
+def generate_key(msg, key):
+    key = list(key)
+    if len(msg) == len(key):
+        return key
+    else:
+        for i in range(len(msg) - len(key)):
+            key.append(key[i % len(key)])
+    return "".join(key)
+
+def encrypt_vigenere(msg, key):
+    encrypted_text = []
+    key = generate_key(msg, key)
+    for i in range(len(msg)):
+        char = msg[i]
+        if char.islower():
+            encrypted_char = chr((ord(char) + ord(key[i]) % ALPHABET_LENGTH))
+# Номер буквы сообщения + номер буквы ключа % длина алфавита
+        else:
+            encrypted_char = char
+        encrypted_text.append(encrypted_char)
+    return "".join(encrypted_text)
+
+def decrypt_vigenere(msg, key):
+    decrypted_text = []
+    key = generate_key(msg, key)
+    for i in range(len(msg)):
+        char = msg[i]
+        if char.islower():
+            decrypted_char = chr((ord(char) - ord(key[i]) - 1))
+        else:
+            decrypted_char = char
+        decrypted_text.append(decrypted_char)
+    return "".join(decrypted_text)
+                    </code></pre>
+                </section>
+                <section>
+                    <h1>Энигма</h1>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="border-b">Немецкая шифровальная машина, использовавшаяся во Второй мировой войне.
+                            Энигма представляла собой сложное устройство роторного типа, которое генерировало ежедневно
+                            изменяемые ключи</div>
+                        <img src="./assets/enigma.jpg" height="300" alt="">
+                    </div>
+                </section>
+            </section>
+            <section>
+                <section data-auto-animate>
+                    <h1>Современные методы шифрования</h1>
+                    <p>используется для обеспечения безопасности в интернете, банковских системах, электронной почте и
+                        других аспектах нашей жизни</p>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div>
+                            <h3>Симметричное шифрование</h3>
+                            <p>Симметричное шифрование использует один и тот же ключ для шифрования и расшифровки данных
+                            </p>
+                            <h4>AES, DES</h4>
+                        </div>
+                        <div>
+                            <h3>Асимметричное шифрование</h3>
+                            <p>Этот метод использует два ключа: открытый (public) и закрытый (private). Сообщения,
+                                зашифрованные одним ключом, могут быть расшифрованы только другим</p>
+                            <h4>RSA</h4>
+                        </div>
+                    </div>
+                </section>
+                <section data-auto-animate>
+                    <h1>Современные методы шифрования</h1>
+                    <p>используется для обеспечения безопасности в интернете, банковских системах, электронной почте и
+                        других аспектах нашей жизни</p>
+                    <div class="grid grid-cols-2 gap-8">
+                        <div style="grid-column: span 2">
+                            <h3>Хэширование</h3>
+                            <p>преобразование данных в уникальную строку фиксированной длины (хеш)</p>
+                            <h4>MD5</h4>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h1>Сравнение методов</h1>
+                    <table>
+                        <thead>
+                            <td>Методы</td>
+                            <td>Преимущества</td>
+                            <td>Недостатки</td>
+                            <td>Применение</td>
+                        </thead>
+                        <tr>
+                            <td>Симметричное</td>
+                            <td>Быстрое, эффективно для больших данных</td>
+                            <td>Требует безопасной передачи ключей</td>
+                            <td>VPN, базы данных</td>
+                        </tr>
+                        <tr>
+                            <td>Асимметричное</td>
+                            <td>Безопасно для передачи ключей</td>
+                            <td>Медленнее симметричного</td>
+                            <td>HTTPS, цифровые подписи</td>
+                        </tr>
+                        <tr>
+                            <td>Хеширование</td>
+                            <td>Уникальность, необратимость</td>
+                            <td>Нельзя расшифровать</td>
+                            <td>Пароли, целостность данных</td>
+                        </tr>
+                    </table>
+                </section>
+                <section data-auto-animate>
+                    <h1>DES</h1>
+                    <h4>Data Encryption Standard</h4>
+                    <p>симметричный алгоритм шифрования, разработанный в 1970-х годах компанией IBM и утверждённый
+                        Национальным институтом стандартов и технологий США (NIST) в 1977 году</p>
+                    <h3>Характеристика</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="border-b">
+                            <h5>Длина ключа</h5>
+                            <p>использует ключ длиной 56 бит</p>
+                        </div>
+                        <div class="border-b">
+                            <h5>Блочный алгоритм</h5>
+                            <p>работает с блоками данных длиной 64 бита</p>
+                        </div>
+                        <div class="border-b">
+                            <h5>Симметричность</h5>
+                            <p>Один и тот же ключ используется как для шифрования, так и для расшифровки</p>
+                        </div>
+                        <div class="border-b">
+                            <h5>Сложность</h5>
+                            <p>DES выполняет 16 раундов преобразований, включая перестановки и замену данных</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- <section data-auto-animate>
+                    <h1>DES</h1>
+                    <h2>1. Превращаем слово в двоичный код</h2>
+                    <h4>eternity</h4>
+                    <h5>01100101 01110100 01100101 01110010 01101110 01101001 01110100 01111001</h5>
+                </section>
+                <section data-auto-animate>
+                    <h1>DES</h1>
+                    <h2>2. Бьем число на блоки по 64 бита</h2>
+                    <h4>01100101 01110100 01100101 01110010 01101110 01101001 01110100 01111001</h4>
+                    <h5>Уже является 64 битным сообщением</h5>
+                </section>
+                <section data-auto-animate>
+                    <h1>DES</h1>
+                    <h2>2. Перестановка бит согласно таблице</h2>
+                    <pre>
+58 	50 	42 	34 	26 	18 	10 	2
+60 	52 	44 	36 	28 	20 	12 	4
+62 	54 	46 	38 	30 	22 	14 	6
+64 	56 	48 	40 	32 	24 	16 	8
+57 	49 	41 	33 	25 	17 	9 	1
+59 	51 	43 	35 	27 	19 	11 	3
+61 	53 	45 	37 	29 	21 	13 	5
+63 	55 	47 	39 	31 	23 	15 	7 
+                    </pre>
+                    <h4>01100101 01110100 01100101 01110010 01101110 0<span style="color: var(--blue)">1</span>101001
+                        0<span style="color: var(--yellow)">1</span>110100 0<span
+                            style="color: var(--red)">1</span>111001
+                    </h4>
+                    <h4><span style="color: var(--red)">1</span><span style="color: var(--yellow)">1</span
+                            style="color: var(--blue)">1</span>11111100101001010111101001010000000111111111011000000011000
+                    </h4>
+                </section>
+                <section data-auto-animate>
+                    <h1>DES</h1>
+                    <h2>3. Делим на части по 32 бита</h2>
+                    <h3>L0</h3>
+                    <h4>111111001010000101011110100101</h4>
+                    <br>
+                    <h3>R0</h3>
+                    <h5>000000111111111011000000011000</h5>
+                </section>
+                <section data-auto-animate>
+                    <h1>DES</h1>
+                    <h2>4. Формирование ключа для раундов шифрования</h2>
+                    <h3>kitek</h3>
+                    <h4>01101011 01101001 01110100 01100101 01101011</h4>
+                    <h5>
+                        011010110110100101110100011001010110101101101011011010010111010
+                    </h5>
+                    <pre>
+57 	49 	41 	33 	25 	17 	9 	1
+58 	50 	42 	34 	26 	18 	10 	2
+59 	51 	43 	35 	27 	19 	11 	3
+60 	52 	44 	36 	63 	55 	47 	39
+31 	23 	15 	7 	62 	54 	46 	38
+30 	22 	14 	6 	61 	53 	45 	37
+29 	21 	13 	5 	28 	20 	12 	4 
+                    </pre>
+                    <div class="border-r">Каждый 8 бит отсекается</div>
+
+                    <h5>
+                        100001001011011011111110011100110111101001000110011010110
+                    </h5>
+                </section>
+                <section data-auto-animate>
+                    <h1>DES</h1>
+                    <h2>5. Создаем 16 уникальных ключей для каждого раунда</h2>
+                    <pre>
+S1                                           S2
+14 4 13 1 2 15 11 8 3 10 6 12 5 9 0 7        15 1 8 14 6 11 3 4 9 7 2 13 12 0 5 10
+0 15 7 4 14 2 13 1 10 6 12 11 9 5 3 8        3 13 4 7 15 2 8 14 12 0 1 10 6 9 11 5
+4 1 14 8 13 6 2 11 15 12 9 7 3 10 5 0        0 14 7 11 10 4 13 1 5 8 12 6 9 3 2 15
+15 12 8 2 4 9 1 7 5 11 3 14 10 0 6 13        13 8 10 1 3 15 4 2 11 6 7 12 0 5 14 9
+</pre>
+<h5>S1: 1111010101011101101011010110111110000010011010010010011001</h5>
+<h5>S2: 1000101101001111100011111100110000000111010111110110011010</h5>
+<h5>...</h5>
+                </section>
+                <section data-auto-animate>
+                    <h1>DES</h1>
+                    <h2>6. Раунды шифрования</h2>
+                    <h3>Round 1</h3>
+                    <h4>111111001010000101011110100101</h4>
+                    <h5>100001001011011011111110011100110111101001000110011010110</h5>
+                </section>
+                <section>
+                    <h1>XOR</h1>
+                </section> -->
             </section>
         </div>
     </div>
