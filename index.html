@@ -1,399 +1,407 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-        <title>reveal.js</title>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-        <link rel="stylesheet" href="dist/reset.css" />
-        <link rel="stylesheet" href="dist/reveal.css" />
-        <link rel="stylesheet" href="dist/theme/tokyo-night.css" />
+    <title>reveal.js</title>
 
-        <!-- Theme used for syntax highlighted code -->
-        <link rel="stylesheet" href="plugin/highlight/tokyo-night.css" />
-        <link rel="stylesheet" href="plugin/chalkboard/style.css" />
-        <link rel="stylesheet" href="plugin/customcontrols/style.css" />
-        <script src="https://cdn.tailwindcss.com"></script>
-    </head>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/tokyo-night.css" />
 
-    <body>
-        <div class="reveal">
-            <div class="slides">
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/tokyo-night.css" />
+    <link rel="stylesheet" href="plugin/chalkboard/style.css" />
+    <link rel="stylesheet" href="plugin/customcontrols/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>История шифрования</h1>
+                <img class="r-stretch" src="https://ktkv-presentations.github.io/cypher-1" data-type="qrcode" />
+            </section>
+            <section>
                 <section>
-                    <h1>Beautiful presentations</h1>
-                    <h2>New features</h2>
-                    <ul>
-                        <li>Nerd icons </li>
-                        <li>
-                            <code class="js">
-                                (inline) => code("highlighting")
-                            </code>
-                        </li>
-                        <li>Automatic QR Code generation</li>
-                        <li>and much more!</li>
-                    </ul>
-                </section>
-                <section>
-                    <h1>CUSTOM TOKYONIGHT THEME</h1>
-                    <h2 class="fragment">THAT HAS</h2>
-                    <h3 class="fragment">MULTI</h3>
-                    <h4 class="fragment">LEVEL</h4>
-                    <h5 class="fragment">HEADING</h5>
-                    <h6 class="fragment">COLORS</h6>
-                    <h6>
-                        Thanks to this project
-                        <a
-                            href="https://github.com/tcmmichaelb139/obsidian-tokyonight">
-                            
-                        </a>
-                        for the colorscheme!
-                    </h6>
-                </section>
-                <section>
-                    <section>
-                        <h1>Tailwind CSS</h1>
-                        <div class="grid grid-cols-2 gap-8">
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div>
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
-                            <div class="col-span-2">
-                                <h5>Lorem, ipsum.</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet consectetur
-                                    adipisicing elit. Error quod fugiat harum
-                                    modi laboriosam dignissimos, maxime
-                                    possimus? Error, nihil in.
-                                </p>
-                            </div>
+                    <h1>Экскурс в историю</h1>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="border-b">
+                            <h3>Шифр Цезаря</h3>
+                            <div>1 век до н.э.</div>
+                            <p>Один из первых известных шифров, использовавшийся Гаем Юлием Цезарем. Шифр сдвигает буквы
+                                алфавита на определенное количество позиций</p>
                         </div>
-                    </section>
-                    <section>
-                        <h1>Custom classes</h1>
-                        <div class="grid grid-cols-3 gap-8">
-                            <div class="border-r">
-                                <h5>border-r</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-o">
-                                <h5>border-o</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                            <div class="border-y">
-                                <h5>border-y</h5>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur
-                                    adipisicing elit. Illum, soluta!
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                </section>
-                <section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <div>
-                            Now also has Tokyo Night
-                            <code>highlight.js</code>
-                            highlighting implementation
-                        </div>
-                        <pre><code data-trim data-noescape>
-var foo = {
-    bar: function () {
-             alert("Hello, World!");
-         }
-};	
-					</code></pre>
-                    </section>
-                    <section data-auto-animate>
-                        <h1>New code highlighting!</h1>
-                        <h5>Inline code highlighting is now also supported!</h5>
-                        <p>
-                            Just wrap your code with
-                            <code>&lt;code&gt;</code>
-                            tag and get highlighting like this
-                            <code class="js">
-                                const foo = () => {return bar}
-                            </code>
-                            !
-                        </p>
-                    </section>
-                </section>
-                <section>
-                    <h1>Mermaid for beautiful diagrams!</h1>
-                    <div class="mermaid">
-                        <pre>
-						erDiagram
-    CUSTOMER ||--o{ ORDER : ""
-    CUSTOMER {
-        string name
-        string custNumber
-        string sector
-    }
-    ORDER ||--|{ LINE-ITEM : contains
-    ORDER {
-        int orderNumber
-        string deliveryAddress
-    }
-    LINE-ITEM {
-        string productCode
-        int quantity
-        float pricePerUnit
-    }
-    ORDER ||--|{ STUDENT : contains
-    STUDENT {
-        int orderNumber
-        string deliveryAddress
-    }
-						</pre
-                        >
+                        <img class="r-stretch" height="400" src="assets/drip-ceasar.png" alt="">
                     </div>
-                    <h4>
-                        Check documentation
-                        <a href="https://mermaid.js.org/config/usage.html">
-                            here
-                        </a>
-                        !
-                    </h4>
                 </section>
                 <section>
-                    <h1>Now supports Nerd font icons!</h1>
-                    <div>Nerdy project that adds icons to font itself</div>
-                    <h6>
-                        Checkout their site for icons like this
-                        <a href="https://www.nerdfonts.com/">󰖟</a>
-                        !
-                    </h6>
-                </section>
-                <section>
-                    <h1>Now supports automatic QRCode generation!</h1>
+                    <h1>Шифр цезаря</h1>
+                    <h3>ROT13</h3>
+                    <p>Позиция изначальной буквы смещается на 13 символов по алфавиту</p>
                     <div>
-                        With GoQR you can just add data-type and alt attributes
-                        to your
-                        <code class="html">
-                            &lt;img src="https://goqr.me/" data-type="qrcode" /
-                            &gt;
-                        </code>
-                        tag!
+                        <table style="font-size: 1.3rem;">
+                            <tr>
+                                <td>A</td>
+                                <td>B</td>
+                                <td>C</td>
+                                <td>D</td>
+                                <td>E</td>
+                                <td>F</td>
+                                <td>G</td>
+                                <td>H</td>
+                                <td>I</td>
+                                <td>J</td>
+                                <td>K</td>
+                                <td>L</td>
+                                <td>M</td>
+                                <td>N</td>
+                                <td>O</td>
+                                <td>P</td>
+                                <td>Q</td>
+                                <td>R</td>
+                                <td>S</td>
+                                <td>T</td>
+                                <td>U</td>
+                                <td>V</td>
+                                <td>W</td>
+                                <td>X</td>
+                                <td>Y</td>
+                                <td>Z</td>
+                            </tr>
+                            <tr>
+                                <td class="highlight">N</td>
+                                <td class="highlight">O</td>
+                                <td class="highlight">P</td>
+                                <td class="highlight">Q</td>
+                                <td class="highlight">R</td>
+                                <td class="highlight">S</td>
+                                <td class="highlight">T</td>
+                                <td class="highlight">U</td>
+                                <td class="highlight">V</td>
+                                <td class="highlight">W</td>
+                                <td class="highlight">X</td>
+                                <td class="highlight">Y</td>
+                                <td class="highlight">Z</td>
+                                <td class="highlight">A</td>
+                                <td class="highlight">B</td>
+                                <td class="highlight">C</td>
+                                <td class="highlight">D</td>
+                                <td class="highlight">E</td>
+                                <td class="highlight">F</td>
+                                <td class="highlight">G</td>
+                                <td class="highlight">H</td>
+                                <td class="highlight">I</td>
+                                <td class="highlight">J</td>
+                                <td class="highlight">K</td>
+                                <td class="highlight">L</td>
+                                <td class="highlight">M</td>
+                            </tr>
+                        </table>
                     </div>
-                    <img
-                        class="r-stretch"
-                        src="https://goqr.me/"
-                        data-type="qrcode" />
+                    <br>
+                    <div class="border-b">
+                        <table>
+                            <tr>
+                                <td>H</td>
+                                <td>e</td>
+                                <td>l</td>
+                                <td>l</td>
+                                <td>o</td>
+                                <td> </td>
+                                <td>w</td>
+                                <td>o</td>
+                                <td>r</td>
+                                <td>l</td>
+                                <td>d</td>
+                            </tr>
+                            <tr>
+                                <td>U</td>
+                                <td>r</td>
+                                <td>y</td>
+                                <td>y</td>
+                                <td>b</td>
+                                <td></td>
+                                <td>j</td>
+                                <td>b</td>
+                                <td>e</td>
+                                <td>y</td>
+                                <td>q</td>
+                            </tr>
+                        </table>
+                    </div>
                 </section>
                 <section>
-                    <h1>New changes on the way!</h1>
+                    <h4>Попробуйте расшифровать следующее послание</h4>
+                    <div class="border-r">
+                        <h1>Юямэзц ныв</h1>
+                    </div>
+                    <div>Алфавит - русский, без чисел, тип кодировки ROT13</div>
+                    <div>
+                        <table style="font-size: 1rem;">
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td>18</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>21</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td>32</td>
+                                <td>33</td>
+                            </tr>
+                            <tr>
+                                <td>А</td>
+                                <td>Б</td>
+                                <td>В</td>
+                                <td>Г</td>
+                                <td>Д</td>
+                                <td>Е</td>
+                                <td>Ж</td>
+                                <td>З</td>
+                                <td>И</td>
+                                <td>Й</td>
+                                <td>К</td>
+                                <td>Л</td>
+                                <td>М</td>
+                                <td>Н</td>
+                                <td>О</td>
+                                <td>П</td>
+                                <td>Р</td>
+                                <td>С</td>
+                                <td>Т</td>
+                                <td>У</td>
+                                <td>Ф</td>
+                                <td>Х</td>
+                                <td>Ц</td>
+                                <td>Ч</td>
+                                <td>Ш</td>
+                                <td>Щ</td>
+                                <td>Ъ</td>
+                                <td>Ы</td>
+                                <td>Ь</td>
+                                <td>Э</td>
+                                <td>Ю</td>
+                                <td>Я</td>
+                            </tr>
+                        </table>
+                    </div>
                 </section>
-            </div>
+            </section>
         </div>
+    </div>
 
-        <script src="dist/reveal.js"></script>
-        <script src="plugin/notes/notes.js"></script>
-        <script src="plugin/markdown/markdown.js"></script>
-        <script src="plugin/highlight/highlight.js"></script>
-        <script src="plugin/qrcode/qrcode.js"></script>
-        <script src="plugin/mermaid/mermaid.js"></script>
-        <script src="plugin/chalkboard/plugin.js"></script>
-        <script src="plugin/customcontrols/plugin.js"></script>
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/qrcode/qrcode.js"></script>
+    <script src="plugin/mermaid/mermaid.js"></script>
+    <script src="plugin/chalkboard/plugin.js"></script>
+    <script src="plugin/customcontrols/plugin.js"></script>
 
-        <script>
-            tailwind.config = {
-                corePlugins: {
-                    preflight: false,
-                },
-            }
-        </script>
-        <script>
-            // More info about initialization & config:
-            // - https://revealjs.com/initialization/
-            // - https://revealjs.com/config/
+    <script>
+        tailwind.config = {
+            corePlugins: {
+                preflight: false,
+            },
+        }
+    </script>
+    <script>
+        // More info about initialization & config:
+        // - https://revealjs.com/initialization/
+        // - https://revealjs.com/config/
 
-            const colors = {
-                blue0: 'rgb(61, 89, 161)',
-                blue: 'rgb(122, 162, 247)',
-                cyan: 'rgb(125, 207, 255)',
-                magenta: 'rgb(187, 154, 247)',
-                orange: 'rgb(255, 158, 100)',
-                yellow: 'rgb(224, 175, 104)',
-                green: 'rgb(158, 206, 106)',
-                teal: 'rgb(26, 188, 156)',
-                red: 'rgb(255, 117, 127)',
-                red1: 'rgb(219, 75, 75)',
-                fg: 'rgb(192, 202, 245)',
-                bg: 'rgb(26, 27, 38)',
-                transparent: '#00000000',
-            }
+        const colors = {
+            blue0: 'rgb(61, 89, 161)',
+            blue: 'rgb(122, 162, 247)',
+            cyan: 'rgb(125, 207, 255)',
+            magenta: 'rgb(187, 154, 247)',
+            orange: 'rgb(255, 158, 100)',
+            yellow: 'rgb(224, 175, 104)',
+            green: 'rgb(158, 206, 106)',
+            teal: 'rgb(26, 188, 156)',
+            red: 'rgb(255, 117, 127)',
+            red1: 'rgb(219, 75, 75)',
+            fg: 'rgb(192, 202, 245)',
+            bg: 'rgb(26, 27, 38)',
+            transparent: '#00000000',
+        }
 
-            Reveal.initialize({
-                hash: true,
-                // Learn about plugins: https://revealjs.com/plugins/
-                plugins: [
-                    RevealMarkdown,
-                    RevealHighlight,
-                    RevealNotes,
-                    RevealMermaid,
-                    RevealChalkboard,
-                    RevealCustomControls,
-                ],
-                slideNumber: true,
-                customcontrols: {
-                    controls: [
-                        {
-                            icon: '<div></div>',
-                            title: 'Clear canvas (DEL)',
-                            action: 'RevealChalkboard.clear();',
-                        },
-                        {
-                            icon: '<div></div>',
-                            title: 'Toggle chalkboard (B)',
-                            action: 'RevealChalkboard.toggleChalkboard();',
-                        },
-                        {
-                            icon: '<div></div>',
-                            title: 'Toggle notes canvas (C)',
-                            action: 'RevealChalkboard.toggleNotesCanvas();',
-                        },
-                    ],
-                },
-                chalkboard: {
-                    boardmarkerWidth: 5,
-                    boardmarkers: [
-                        {
-                            color: colors.bg,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.fg,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.blue,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.red,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.green,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.yellow,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.teal,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                        {
-                            color: colors.orange,
-                            cursor:
-                                'url(' +
-                                path +
-                                'img/boardmarker-black.png), auto',
-                        },
-                    ],
-                    chalks: [
-                        {
-                            color: colors.bg,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.fg,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.blue,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.red,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.green,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.yellow,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.teal,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                        {
-                            color: colors.orange,
-                            cursor:
-                                'url(' + path + 'img/chalk-white.png), auto',
-                        },
-                    ],
-                },
-                mermaid: {
-                    securityLevel: 'loose',
-                    theme: 'dark',
-                    themeVariables: {
-                        darkMode: true,
-                        textColor: colors.fg,
-                        background: colors.bg,
-                        mainBkg: colors.bg,
-                        lineColor: colors.fg,
+        Reveal.initialize({
+            hash: true,
+            // Learn about plugins: https://revealjs.com/plugins/
+            plugins: [
+                RevealMarkdown,
+                RevealHighlight,
+                RevealNotes,
+                RevealMermaid,
+                RevealChalkboard,
+                RevealCustomControls,
+            ],
+            slideNumber: true,
+            customcontrols: {
+                controls: [
+                    {
+                        icon: '<div></div>',
+                        title: 'Clear canvas (DEL)',
+                        action: 'RevealChalkboard.clear();',
                     },
+                    {
+                        icon: '<div></div>',
+                        title: 'Toggle chalkboard (B)',
+                        action: 'RevealChalkboard.toggleChalkboard();',
+                    },
+                    {
+                        icon: '<div></div>',
+                        title: 'Toggle notes canvas (C)',
+                        action: 'RevealChalkboard.toggleNotesCanvas();',
+                    },
+                ],
+            },
+            chalkboard: {
+                boardmarkerWidth: 5,
+                boardmarkers: [
+                    {
+                        color: colors.bg,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.fg,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.blue,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.red,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.green,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.yellow,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.teal,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                    {
+                        color: colors.orange,
+                        cursor:
+                            'url(' +
+                            path +
+                            'img/boardmarker-black.png), auto',
+                    },
+                ],
+                chalks: [
+                    {
+                        color: colors.bg,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.fg,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.blue,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.red,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.green,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.yellow,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.teal,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                    {
+                        color: colors.orange,
+                        cursor:
+                            'url(' + path + 'img/chalk-white.png), auto',
+                    },
+                ],
+            },
+            mermaid: {
+                securityLevel: 'loose',
+                theme: 'dark',
+                themeVariables: {
+                    darkMode: true,
+                    textColor: colors.fg,
+                    background: colors.bg,
+                    mainBkg: colors.bg,
+                    lineColor: colors.fg,
                 },
-            })
-        </script>
-    </body>
-</html>
+            },
+        })
+    </script>
+</body>
 
+</html>
